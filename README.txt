@@ -1,6 +1,7 @@
 A simple python flask webservice to encrypt/decrypt pdf files
-
 git repo: https://github.com/trevynmace/flask_web_pdf_encryption
+docker image: https://hub.docker.com/r/trevynmace/flask_web/
+docker pull trevynmace/flask_web 
 
 
 
@@ -18,7 +19,6 @@ docker save -o <output path> flask_web
 docker commit <containerId> flask_web
 docker tag flask_web <repo url>
 docker push <repo url>
-
 
 docker cloud upload:
 docker login
