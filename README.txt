@@ -5,7 +5,7 @@ docker pull trevynmace/flask_web
 
 GCP service endpoint: http://35.227.178.5:5000
 OR
-trevynmace.com:5000
+http://trevynmace.com:5000
 
 
 
