@@ -1,3 +1,5 @@
+A simple python flask webservice to encrypt/decrypt pdf files
+
 FROM python:3.7-alpine (smaller filesize than python:3.7 or ubuntu [obviously])
 
 docker build -t flask_web:latest .
@@ -18,3 +20,12 @@ docker cloud upload:
 docker login
 docker tag <image> $DOCKER_ID_USER/flask_web
 docker push $DOCKER_ID_USER/flask_web
+
+
+
+gcp:
+gcloud components install kubectl
+gcloud auth configure-docker
+gcloud container clusters create flask-web --num-nodes=3
+#3 hours later...
+gcloud compute instances list
